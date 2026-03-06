@@ -1,0 +1,64 @@
+{
+  "name": "@successbrian/global-assets",
+  "version": "1.0.0",
+  "description": "Shared code for Empire Ecosystem sites - authentication, analytics, fingerprinting",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./utils/fingerprint": {
+      "types": "./dist/utils/fingerprint.d.ts",
+      "import": "./dist/utils/fingerprint.mjs",
+      "require": "./dist/utils/fingerprint.js"
+    },
+    "./utils/analytics": {
+      "types": "./dist/utils/analytics.d.ts",
+      "import": "./dist/utils/analytics.mjs",
+      "require": "./dist/utils/analytics.js"
+    },
+    "./lib/ecosystemAuth": {
+      "types": "./dist/lib/ecosystemAuth.d.ts",
+      "import": "./dist/lib/ecosystemAuth.mjs",
+      "require": "./dist/lib/ecosystemAuth.js"
+    },
+    "./hooks/useUnifiedAuth": {
+      "types": "./dist/hooks/useUnifiedAuth.d.ts",
+      "import": "./dist/hooks/useUnifiedAuth.mjs",
+      "require": "./dist/hooks/useUnifiedAuth.js"
+    }
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ecosystem",
+    "authentication",
+    "analytics",
+    "shared"
+  ],
+  "author": "SuccessBrian",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/successbrian/GlobalAssets.git"
+  }
+}

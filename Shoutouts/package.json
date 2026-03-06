@@ -1,0 +1,15 @@
+{
+  "name": "@global-assets/shoutouts",
+  "version": "1.0.0",
+  "description": "Self-contained Shoutout Ticker for empire sites",
+  "main": "ShoutoutTicker.tsx",
+  "types": "ShoutoutTicker.tsx",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "lucide-react": "^0.294.0",
+    "framer-motion": "^10.16.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}

@@ -1,0 +1,53 @@
+# robots.txt for Civitas Reserve
+# https://civitasreserve.com
+
+User-agent: *
+Allow: /
+
+# Sitemap locations
+Sitemap: https://civitasreserve.com/sitemap-index.xml
+Sitemap: https://civitasreserve.com/sitemap-merchants.xml
+Sitemap: https://civitasreserve.com/sitemap-realestate.xml
+
+# Allow access to all public content
+Disallow:
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 10
+
+# Language preferences
+# (Handled via hreflang in sitemaps)
+
+# Special instructions for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Facebookexternalhit
+Allow: /
+
+# Block private/admin areas
+Disallow: /admin/
+Disallow: /api/private/
+Disallow: /dashboard/
+Disallow: /auth/
+
+# Block duplicate content
+Disallow: /en-us/
+Disallow: /en_gb/
+
+# Completed

@@ -1,0 +1,1 @@
+export { DividendVault } from './DividendVault';

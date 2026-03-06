@@ -1,0 +1,26 @@
+{
+  "name": "@global-assets/pets",
+  "version": "1.0.0",
+  "description": "Pet Market System - Human Asset Trading for empire sites",
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./index.ts"
+    },
+    "./types": "./types.ts",
+    "./usePetMarket": "./usePetMarket.ts",
+    "./AssetStatusCard": "./AssetStatusCard.tsx",
+    "./PetPortfolio": "./PetPortfolio.tsx",
+    "./PetOverlay": "./PetOverlay.tsx"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "lucide-react": "^0.294.0",
+    "framer-motion": "^10.16.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
