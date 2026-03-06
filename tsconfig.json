@@ -21,7 +21,11 @@
   },
   "include": [
     "src/utils/**/*.ts",
-    "src/utils/**/*.tsx"
+    "src/utils/**/*.tsx",
+    "src/lib/**/*.ts",
+    "src/lib/**/*.tsx",
+    "src/hooks/**/*.ts",
+    "src/hooks/**/*.tsx"
   ],
   "exclude": ["node_modules", "dist"]
 }

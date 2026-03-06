@@ -1,7 +1,7 @@
 {
   "name": "@successbrian/global-assets",
-  "version": "1.0.0",
-  "description": "Shared code for Empire Ecosystem sites - analytics, fingerprinting",
+  "version": "1.0.1",
+  "description": "Shared code for Empire Ecosystem sites - analytics, fingerprinting, authentication",
   "main": "dist/utils/fingerprint.js",
   "module": "dist/utils/fingerprint.mjs",
   "types": "dist/utils/fingerprint.d.ts",
@@ -20,6 +20,16 @@
       "types": "./dist/utils/analytics.d.ts",
       "import": "./dist/utils/analytics.mjs",
       "require": "./dist/utils/analytics.js"
+    },
+    "./lib/ecosystemAuth": {
+      "types": "./dist/lib/ecosystemAuth.d.ts",
+      "import": "./dist/lib/ecosystemAuth.mjs",
+      "require": "./dist/lib/ecosystemAuth.js"
+    },
+    "./hooks/useUnifiedAuth": {
+      "types": "./dist/hooks/useUnifiedAuth.d.ts",
+      "import": "./dist/hooks/useUnifiedAuth.mjs",
+      "require": "./dist/hooks/useUnifiedAuth.js"
     }
   },
   "files": [
@@ -35,10 +45,14 @@
     "ecosystem",
     "analytics",
     "fingerprint",
+    "authentication",
     "shared"
   ],
   "author": "SuccessBrian",
   "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
