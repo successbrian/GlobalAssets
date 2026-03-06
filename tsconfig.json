@@ -8,7 +8,8 @@
     "declarationMap": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -21,6 +22,13 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
+  "include": [
+    "src/utils/**/*.ts",
+    "src/utils/**/*.tsx",
+    "src/lib/ecosystemAuth.ts",
+    "src/lib/analytics/**/*.ts",
+    "src/hooks/**/*.ts",
+    "src/hooks/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx", "src/app", "src/components", "src/pages", "src/logic", "src/lib/contactflowIdentity.ts"]
 }

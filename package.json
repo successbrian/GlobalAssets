@@ -57,6 +57,9 @@
     "@types/react": "^18.0.0",
     "typescript": "^5.0.0"
   },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/successbrian/GlobalAssets.git"
