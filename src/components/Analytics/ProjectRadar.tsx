@@ -228,7 +228,7 @@ export function ProjectRadar() {
       <div className="mt-4 flex items-center gap-6 text-sm text-gray-400">
         <div className="flex items-center gap-2">
           <FireIcon />
-          <span>Burning Hot (>$1,000/24h)</span>
+          <span>Burning Hot (&gt;$1,000/24h)</span>
         </div>
         <div className="flex items-center gap-2">
           <LockIcon />
