@@ -1,15 +1,15 @@
 {
   "name": "@successbrian/global-assets",
   "version": "1.0.0",
-  "description": "Shared code for Empire Ecosystem sites - authentication, analytics, fingerprinting",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "description": "Shared code for Empire Ecosystem sites - analytics, fingerprinting",
+  "main": "dist/utils/fingerprint.js",
+  "module": "dist/utils/fingerprint.mjs",
+  "types": "dist/utils/fingerprint.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "types": "./dist/utils/fingerprint.d.ts",
+      "import": "./dist/utils/fingerprint.mjs",
+      "require": "./dist/utils/fingerprint.js"
     },
     "./utils/fingerprint": {
       "types": "./dist/utils/fingerprint.d.ts",
@@ -20,16 +20,6 @@
       "types": "./dist/utils/analytics.d.ts",
       "import": "./dist/utils/analytics.mjs",
       "require": "./dist/utils/analytics.js"
-    },
-    "./lib/ecosystemAuth": {
-      "types": "./dist/lib/ecosystemAuth.d.ts",
-      "import": "./dist/lib/ecosystemAuth.mjs",
-      "require": "./dist/lib/ecosystemAuth.js"
-    },
-    "./hooks/useUnifiedAuth": {
-      "types": "./dist/hooks/useUnifiedAuth.d.ts",
-      "import": "./dist/hooks/useUnifiedAuth.mjs",
-      "require": "./dist/hooks/useUnifiedAuth.js"
     }
   },
   "files": [
@@ -43,8 +33,8 @@
   },
   "keywords": [
     "ecosystem",
-    "authentication",
     "analytics",
+    "fingerprint",
     "shared"
   ],
   "author": "SuccessBrian",
@@ -56,9 +46,6 @@
   "devDependencies": {
     "@types/react": "^18.0.0",
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.39.0"
   },
   "repository": {
     "type": "git",
